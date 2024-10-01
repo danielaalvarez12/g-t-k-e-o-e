@@ -55,4 +55,25 @@
     </form>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Voting!</title>
+</head>
+<body>
+    <h1>Thank You for Your Vote!</h1>
+    <p>Your vote has been successfully recorded.</p>
+
+    <h2>Poll Results:</h2>
+    <ul>
+        <li>YES: {{poll.options[YES]}} votes</li>
+        <li>NO: {{poll.options[NO]}} votes</li>
+        <li>I DONT KNOW: {{poll.options[I DONT KNOW]}} votes</li>
+    </ul>
+
+    <a href="/poll/{{poll.id}}">Back to Poll</a>
+</body>
+</html>
 
