@@ -10,13 +10,13 @@
     <form action="/poll/{{poll.id}}/vote" method="post">
         <ul>
             <li>
-                <input type="radio" name="YES" value="YES" required> Option 1
+                <input type="radio" name="YES" value="YES" required> YES
             </li>
             <li>
-                <input type="radio" name="NO" value="NO"> Option 2
+                <input type="radio" name="NO" value="NO"> NO
             </li>
             <li>
-                <input type="radio" name="I DONT KNOW" value="I DONT KNOW"> Option 3
+                <input type="radio" name="I DONT KNOW" value="I DONT KNOW"> I DONT KNOW
             </li>
         </ul>
         <input type="submit" value="Vote">
