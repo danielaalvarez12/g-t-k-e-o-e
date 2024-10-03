@@ -5,6 +5,8 @@
 </head>
 <body>
 </h1>Getting to know eachother - Daniela Alvarez</h1>
+	const colorBox = document.getElementById('colorBox');const colors = ['#3498db', '#e74c3c', '#2ecc71', '#f1c40f', '#9b59b6'];
+let currentIndex = 0; colorBox.addEventListener('click', () => { currentIndex = (currentIndex + 1) % colors.length; // Loop through colors colorBox.style.backgroundColor = colors[currentIndex];});
 	
 	<link rel="stylesheet" href="hello-world.css">
 	<h2>Version 2</h2>
