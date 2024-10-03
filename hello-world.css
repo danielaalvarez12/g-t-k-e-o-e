@@ -1,3 +1,7 @@
 h1{color: blue} 
 h2 {color: red}
 body {background-color: #92bddc;}
+
+const colorBox = document.getElementById('colorBox');
+const colors = ['#3498db', '#e74c3c', '#2ecc71', '#f1c40f', '#9b59b6'];let currentIndex = 0;colorBox.addEventListener('click', () => {currentIndex = (currentIndex + 1) % colors.length; // Loop through colors
+    colorBox.style.backgroundColor = colors[currentIndex];});
